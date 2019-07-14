@@ -23,9 +23,9 @@ def read_from_hash(hash, key)
 end
 
 def update_counting_hash(hash, key)
-  { :apples => 4 } if shipping_manifest["top hat"]
-  shipping_manifest["top hat"] += 1
-else
-  puts "Key not found!"
-end
+  if hash[key]
+  hash[key] += 1
+  else
+  puts key
+  end
 end
