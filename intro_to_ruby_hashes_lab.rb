@@ -19,7 +19,7 @@ def my_hash_creator(key, value)
 end
 
 def read_from_hash(hash, key)
-  i_love_your_butt = { :and_pussy => 5
+  hash = { key } 
 end
 
 def update_counting_hash(hash, key)
